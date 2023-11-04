@@ -27,27 +27,6 @@ TEST(SwitchPlayer, test2) {
 	EXPECT_EQ(game.getCurrentPlayer(), 'X');
 }
 
-//TEST(PlayerMoveTest1, test3) {
-//	TicTacToe game;
-//	game.playerMove(1);
-//	EXPECT_EQ(game.getCell(1), 'X');
-//	game.switchPlayer();
-//
-//	game.playerMove(1);
-//	int choice = 2;
-//
-//	EXPECT_EQ(game.getCell(2), '0');
-//}
-//
-//TEST(PlayerMoveTest2, test4) {
-//	TicTacToe game;
-//	game.playerMove(-2);
-//
-//	int choice = 1;
-//	EXPECT_EQ(game.getCell(1), 'X');
-//}
-
-
 //Win X col
 TEST(CheckWin1, test5) {
 	TicTacToe game;
@@ -210,9 +189,3 @@ TEST(CheckWin9, test13) {
 	EXPECT_FALSE(game.checkWin());
 }
 
-
-
-int main(int argc, char* argv[]) {
-	testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS();
-}
